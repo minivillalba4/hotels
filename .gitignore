@@ -35,10 +35,12 @@ htmlcov/
 # Logs
 logs/
 
-# Artefactos ML (regenerables desde src/preprocesado_ml.ipynb)
-Data/ml/*.csv
-models/encoders/*.joblib
-models/encoders/*.json
+# Artefactos ML de entrenamiento (regenerables desde src/preprocesado_ml.ipynb)
+# Nota: X_test.csv, y_test.csv y models/encoders/* SÍ se versionan — la app los necesita en runtime
+Data/ml/X_train.csv
+Data/ml/X_val.csv
+Data/ml/y_train.csv
+Data/ml/y_val.csv
 
 # Node / MCP
 node_modules/
@@ -49,10 +51,17 @@ package-lock.json
 
 # Sistema
 .understand-anything/
+Thumbs.db
 
-# Vscode AI rules
+# Config local de agentes IA
+.claude/
+.codex/
+.aider*
+
+# Secretos / configuración local
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Vscode AI rules (Codacy)
 .github/instructions/codacy.instructions.md
-
-
-#Ignore vscode AI rules
-.github\instructions\codacy.instructions.md

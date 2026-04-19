@@ -1,0 +1,72 @@
+# --- Control de versiones ---
+.git/
+.gitignore
+.gitattributes
+
+# --- Meta Docker / CI ---
+Dockerfile
+.dockerignore
+docker-compose*.yml
+.github/
+
+# --- Python ---
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter / notebooks (la app no los carga en runtime) ---
+.ipynb_checkpoints/
+**/*.ipynb
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Config local agentes IA ---
+.claude/
+.codex/
+.aider*
+
+# --- Logs (se regeneran en runtime dentro del contenedor) ---
+logs/
+
+# --- Datos que la app NO usa en runtime ---
+Data/raw/
+Data/ml/X_train.csv
+Data/ml/X_val.csv
+Data/ml/y_train.csv
+Data/ml/y_val.csv
+
+# --- Documentación no usada por la app ---
+docs/diccionario_datos.xlsx
+
+# --- Node / MCP ---
+node_modules/
+package.json
+package-lock.json
+.playwright-mcp/
+.mcp-auth/
+.understand-anything/
+
+# --- Secretos ---
+.env
+.env.local
+.streamlit/secrets.toml
