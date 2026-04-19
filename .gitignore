@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Editor temporales
+*.tmp*
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Artefactos ML (regenerables desde src/preprocesado_ml.ipynb)
+Data/ml/*.csv
+models/encoders/*.joblib
+models/encoders/*.json
+
+# Node / MCP
+node_modules/
+package.json
+package-lock.json
+.playwright-mcp/run_*/
+.mcp-auth/
+
+# Sistema
+.understand-anything/
+
+# Vscode AI rules
+.github/instructions/codacy.instructions.md
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md
